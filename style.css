@@ -42,7 +42,7 @@ body {
     border-radius: 1px;
     display: flex;
     flex-wrap: wrap;
-    padding: 10px;
+    padding: 7px;
     gap: 15px;
     color: var(--text);
     
