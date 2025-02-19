@@ -160,6 +160,7 @@ section {
     color: var(--text);
     transition: transform 0.2s ease;
     
+    
 }
 
 .clickable:hover {
