@@ -37,7 +37,7 @@ body {
 
 .container {
     max-width: 60rem;
-    margin: 5vw auto 12px auto;
+    margin: 4vw auto 12px auto;
     outline-offset: 4px;
     border-radius: 1px;
     display: flex;
