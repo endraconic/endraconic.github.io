@@ -185,7 +185,7 @@ footer {
 h1, h2, h3, h4, h5, h6, p { 
     margin: 10px;
     line-height: 1.4;
-    color: inherit;
+
 }
 
 h1 { 
@@ -196,6 +196,7 @@ h1 {
     border-bottom: 2px solid var(--border);
     padding-bottom: 5px;
     font-family: 'Share Tech Mono', monospace;
+    color: var(--text);
 }
 
 h2 { 
