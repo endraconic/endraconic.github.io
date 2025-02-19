@@ -31,7 +31,6 @@ body {
     color: var(--text);
     font-size: 1.1rem;
     background-color: var(--mainbg);
-    opacity: 1;
     background-image: url('graph_bg.png');
     background-repeat: repeat;
 }
