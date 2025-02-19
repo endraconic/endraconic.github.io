@@ -236,9 +236,7 @@ img {
 img { max-width: 100%; }
 pre { overflow-x: auto; }
 
-a:visited {
-    color: var(--accent);
-}
+
 
  /* Style the tab */
  .tab {
