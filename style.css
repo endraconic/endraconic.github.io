@@ -1,0 +1,281 @@
+/* start light mode styling */
+:root {
+    --text: rgb(232, 239, 243);
+    --alttext: rgb(224, 228, 231);
+    --border: #797979;
+    --border2: rgb(100, 100, 100);
+    --accent: #c9c9c9;
+    
+    --bg: rgb(107, 107, 107);
+    --gradientBottom: rgb(98, 95, 102);
+    --gradientTop: rgb(42, 42, 42);
+
+    --mainbg: rgb(76, 76, 76);
+
+    --boxbg: rgba(255, 255, 255);
+    /*
+    --bg: rgba(101, 18, 6, 0.905);
+    --gradientBottom: rgb(131, 57, 38);
+    --gradientTop: rgb(68, 37, 15);
+    */
+    
+}
+header {
+    background: url('***dark mode banner image***');
+}
+
+
+
+
+
+* { 
+box-sizing: border-box
+
+}
+body {
+padding: 10px;
+font-family: 'Verdana', sans-serif;
+color: var(--text);
+font-size: 1.1rem;
+
+
+
+/* page background pattern */
+background-color: var(--mainbg);
+opacity: 1;
+background-image: url('BG01.JPG');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+/*
+background-image:  linear-gradient(30deg, var(--bg) 12%, transparent 12.5%, transparent 87%, var(--bg) 87.5%, var(--bg)), linear-gradient(150deg, var(--bg) 12%, transparent 12.5%, transparent 87%, var(--bg) 87.5%, var(--bg)), linear-gradient(30deg, var(--bg) 12%, transparent 12.5%, transparent 87%, var(--bg) 87.5%, var(--bg)), linear-gradient(150deg, var(--bg) 12%, transparent 12.5%, transparent 87%, var(--bg) 87.5%, var(--bg)), linear-gradient(60deg, var(--bg) 25%, transparent 25.5%, transparent 75%, var(--bg) 75%, var(--bg)), linear-gradient(60deg, var(--bg) 25%, transparent 25.5%, transparent 75%, var(--bg) 75%, var(--bg));
+background-size: 36px 63px;
+background-position: 0 0, 0 0, 18px 32px, 18px 32px, 0 0, 18px 32px;
+*/
+
+
+}
+
+
+.container {
+max-width: 60rem;
+margin: 5vw auto 12px auto;
+border: 6px solid var(--border2);
+outline-offset: 4px;
+border-radius: 10px;
+display: flex;
+flex-wrap: wrap;
+padding: 10px;
+gap: 10px;
+color: var(--bg);
+
+/* container background pattern */
+/* currently: grid */
+
+background-image:  linear-gradient(var(--bg) 3.4000000000000004px, transparent 3.4000000000000004px), linear-gradient(90deg, var(--bg) 3.4000000000000004px, transparent 3.4000000000000004px), linear-gradient(var(--bg) 1.7000000000000002px, transparent 1.7000000000000002px), linear-gradient(90deg, var(--bg) 1.7000000000000002px, var(--gradientBottom) 1.7000000000000002px);
+/*
+background-size: 85px 85px, 85px 85px, 17px 17px, 17px 17px;
+background-position: -3.4000000000000004px -3.4000000000000004px, -3.4000000000000004px -3.4000000000000004px, -1.7000000000000002px -1.7000000000000002px, -1.7000000000000002px -1.7000000000000002px;
+*/
+}
+/* these control the column widths */
+.small { flex: 1 1 9%; }
+.large { flex: 1 1 82%; }
+.full { flex: 1 1 100%; }
+.half { flex: 1 1 49%; }
+.third {flex: 1 1 30%; }
+
+header {
+background-size: cover;
+background-position: center;
+width: 100%;
+height: 120px; /* change banner height here*/
+border: 2px solid var(--border);
+border-radius: 5px;
+position: relative;
+
+
+}
+header span {
+font-size: 2.5rem;
+position: absolute;
+bottom: 15px;
+right: 10px;
+margin: 10px;
+font-weight: bold;
+text-shadow: 1px 1px var(--text),
+-1px 1px var(--text),
+1px -1px var(--accent),
+-1px -1px var(--accent);
+color: var(--gradientTop);
+}
+header .subtitle{
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+    margin: 5px;
+    text-shadow: 1px 1px var(--text),
+    -1px 1px var(--text),
+    1px -1px var(--accent),
+    -1px -1px var(--accent);
+    color: var(--gradientBottom);
+}
+
+
+nav {
+    border: none; /* Ensures there's no border around the navbar */
+    padding: 3px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+
+nav a {
+    flex: 1 1 auto; /* Allows buttons to grow/shrink equally */
+    text-align: center;
+    padding: 6px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 2px solid var(--border);
+    background: linear-gradient(var(--gradientBottom), var(--gradientTop));
+    color: var(--text);
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+    min-width: 120px; /* Ensures buttons don’t get too small */
+}
+
+nav a:hover, nav a:focus {
+    background: linear-gradient(var(--gradientTop), var(--gradientBottom));
+    border-color: var(--accent);
+    color: var(--alttext);
+}
+
+
+nav a:active {
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+
+
+gamenav{
+
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* optional button styling like in the preview */
+div.small > img {
+display: block;
+margin: 5px auto;
+border:2px solid var(--border);
+border-radius: 5px;
+
+}
+
+
+section {
+border: 2px solid var(--border);
+border-radius: 5px;
+background: linear-gradient(var(--gradientTop),var(--gradientBottom));
+padding: 5px;
+}
+
+.clickable {
+    flex: 1 1 49%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid var(--border);
+    border-radius: 5px;
+    background: linear-gradient(var(--gradientTop), var(--gradientBottom));
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--text);
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.clickable:hover, .clickable:focus {
+    background: linear-gradient(to right, var(--bg), var(--gradientBottom), var(--gradientTop));
+    transform: scale(1.01);
+    color: inherit; /* Prevents text color from changing */
+}
+
+
+.clickable img {
+    max-width: 100%;
+    border-radius: 5px;
+    border: 2px solid var(--border);
+}
+
+.clickable h3, .clickable p {
+    margin: 5px;
+    color: var(--alttext);
+}
+
+
+
+footer {
+text-align: center;
+margin-bottom: 5vw;
+font-size: 0.8rem;
+}
+footer a { 
+text-decoration: none;
+}
+
+
+h1, h2, h3, h4, h5, h6, p  { 
+margin: 5px;
+line-height: 1.4;
+}
+h1 { 
+font-size: 2rem;
+letter-spacing: 2px;
+font-weight: normal;
+text-align: center;
+border-bottom: 2px solid var(--border);
+padding-bottom: 5px;
+}
+h2 { 
+font-size: 1.5rem;
+font-weight: normal;
+text-align: center;
+color: var(--alttext)
+}
+h3 { 
+font-size: 1.4rem;
+text-align: left;
+font-weight: normal;
+}
+h4 { 
+font-size: 1.4rem;
+color: var(--accent);
+padding-left: 12px;
+}
+p{
+    text-indent: 5%;
+    font-size: 1.2rem
+}
+
+img {
+    border-radius: 10px;
+    padding: 5px;
+    border: 2px solid var(--border);
+
+
+}
+
+/* prevents overflow on smaller screens */
+img { max-width: 100%; }
+pre { overflow-x: auto; }
+
+
+a:visited {
+color: var(--accent);
+}
