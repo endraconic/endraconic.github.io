@@ -91,7 +91,6 @@ header .subtitle {
 
 nav {
     border: none;
-    padding: 6px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -102,7 +101,7 @@ nav {
 nav a {
     flex: 1 1 auto;
     text-align: center;
-    padding: 8px 12px;
+    padding: 4px 12px;
     border-radius: 1px;
     text-decoration: none;
     border: 2px solid var(--border);
@@ -192,7 +191,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 h1 { 
-    font-size: 2rem;
+    font-size: 1.8rem;
     letter-spacing: 2px;
     font-weight: normal;
     text-align: center;
@@ -203,7 +202,7 @@ h1 {
 }
 
 h2 { 
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: normal;
     text-align: center;
     color: var(--alttext);
@@ -211,12 +210,20 @@ h2 {
 }
 
 h3 {
+    font-size: 1.4rem;
+    text-align: center;
     font-family: 'Share Tech Mono', monospace;
+    margin: 1px;
+    padding-bottom: 1px;
 }
 
 h4, h5, h6 {
+    font-size: 1rem;
     font-family: 'Share Tech Mono', monospace;
     font-weight: normal;
+    text-align: center;
+    margin: 1px;
+    padding-bottom: 1px;
 }
 
 p {
