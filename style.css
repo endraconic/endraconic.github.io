@@ -45,14 +45,36 @@ body {
     padding: 7px;
     gap: 15px;
     color: var(--text);
-    
 }
 
 /* Column widths */
 .small { flex: 1 1 9%; }
 .large { flex: 1 1 82%; }
-.full { flex: 1 1 100%; }
+.full { 
+    flex: 1 1 100%; 
+}
+.fulldesc { 
+    flex: 1 1 100%; 
+    margin: 0px 10vw;
+}
+
+.fulldesc img{
+    border-radius: 1px;
+    border: 2px solid var(--border);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
 .half { flex: 1 1 49%; }
+.halfvideo { 
+    flex: 1 1 49%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--border);
+    border-radius: 1px;
+}
 .third {flex: 1 1 30%; }
 
 header {
@@ -240,6 +262,7 @@ img {
 }
 
 img { max-width: 100%; }
+
 pre { overflow-x: auto; }
 
 
