@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
 
 /* Start light mode styling */
 :root {
@@ -27,9 +28,9 @@ header {
 
 body {
     padding: 10px;
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Inconsolata', monospace;
     color: var(--text);
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     background-color: var(--mainbg);
     background-image: url('graph_bg.png');
     background-repeat: repeat;
@@ -55,7 +56,11 @@ body {
 }
 .fulldesc { 
     flex: 1 1 100%; 
-    margin: 0px 10vw;
+}
+.fulldesc p{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%
 }
 
 .fulldesc img{
@@ -64,8 +69,10 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 60%;
 }
+
+
 .half { flex: 1 1 49%; }
 .halfvideo { 
     flex: 1 1 49%; 
@@ -75,6 +82,12 @@ body {
     border: 2px solid var(--border);
     border-radius: 1px;
 }
+
+.halfvideo video{
+    border: 2px solid var(--border);
+    border-radius: 1px;
+}
+
 .third {flex: 1 1 30%; }
 
 header {
@@ -144,10 +157,6 @@ nav a:active {
     box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.4);
 }
 
-gamenav {
-    text-align: center;
-    font-size: 1.5rem;
-}
 
 div.small > img {
     display: block;
@@ -166,11 +175,11 @@ section {
 
 .clickable {
     flex: 1 1 49%;
-    display: flex;
-    flex-direction: column;
+    display: inline-block;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: top;
     border: 2px solid var(--border);
     border-radius: 1px;
     background: var(--bg);
@@ -179,8 +188,6 @@ section {
     text-decoration: none;
     color: var(--text);
     transition: transform 0.2s ease;
-    
-    
 }
 
 .clickable:hover {
@@ -249,8 +256,8 @@ h4, h5, h6 {
 }
 
 p {
-    font-family: 'IBM Plex Mono', monospace;
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.2rem;
     text-indent: 1.5em; /* Indents the first line */
     padding-left: 0.5em; /* Ensures all lines align with the indent */
 }
@@ -265,6 +272,9 @@ img { max-width: 100%; }
 
 pre { overflow-x: auto; }
 
+span.hiddenemail{ 
+     
+} 
 
 
  /* Style the tab */
